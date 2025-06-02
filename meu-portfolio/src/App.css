@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+body, html, #root, .hero, #sobre {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden; /* Evita barras de rolagem horizontais */
+  background-color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+:root {
+  scroll-padding-top: 80px; /* Ajuste conforme a altura do seu navbar */
+}

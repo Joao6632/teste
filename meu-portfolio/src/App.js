@@ -2,7 +2,11 @@
 import React from 'react';
 import Navbar from './Componentes/Navbar';
 import Hero from './Componentes/Hero';
+import Sobre from './Sobre/Sobre';
+import Projetos from './Projeto/Projeto';
 import './App.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 function App() {
@@ -13,15 +17,9 @@ function App() {
       
       <div className="App-content" style={{ paddingTop: '60px' }}>
         {/* Removi o id="inicio" duplicado */}
-        <section id="sobre">
-          <h2>Sobre</h2>
-          <p>Um pouco sobre mim...</p>
-        </section>
+        <Sobre />
 
-        <section id="projetos">
-          <h2>Projetos</h2>
-          <p>Meus projetos incríveis.</p>
-        </section>
+        <Projetos />
 
         <section id="habilidades">
           <h2>Habilidades</h2>

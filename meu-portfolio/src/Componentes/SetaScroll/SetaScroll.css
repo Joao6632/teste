@@ -1,0 +1,35 @@
+.seta-scroll-container {
+  position: absolute;
+  bottom: -60px; /* Aumentei para abaixar mais */
+  left: 50%; /* Ajustei para direita */
+  transform: translateX(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.seta-scroll {
+ width: 30px;
+  height: 30px;
+  bottom: 15px;
+  position: absolute;
+  left: 50%;
+  border-left: 2px solid #00ff88;
+  border-bottom: 2px solid #00ff88;
+  transform: rotate(-45deg);
+  animation: bounce 2s infinite;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.seta-scroll:hover {
+  opacity: 1;
+}
+
+@keyframes seta-bounce {
+  0%, 100% { transform: rotate(-45deg) translateY(0); }
+  50% { transform: rotate(-45deg) translateY(-8px); }
+}
